@@ -1,0 +1,147 @@
+{
+  "origins": [
+    {
+      "code": "TPA",
+      "name": "Tampa"
+    },
+    {
+      "code": "MCO",
+      "name": "Orlando"
+    },
+    {
+      "code": "FLL",
+      "name": "Fort Lauderdale"
+    },
+    {
+      "code": "PBI",
+      "name": "West Palm Beach"
+    },
+    {
+      "code": "VRB",
+      "name": "Vero Beach"
+    }
+  ],
+  "destination_groups": [
+    {
+      "id": "denver",
+      "name": "Denver",
+      "airports": [
+        "DEN"
+      ],
+      "primary": "DEN"
+    },
+    {
+      "id": "california",
+      "name": "California",
+      "airports": [
+        "LAX",
+        "SAN",
+        "SFO",
+        "OAK",
+        "BUR"
+      ],
+      "primary": null
+    },
+    {
+      "id": "cascades",
+      "name": "Cascades",
+      "airports": [
+        "SEA",
+        "PDX"
+      ],
+      "primary": null
+    },
+    {
+      "id": "maine",
+      "name": "Maine",
+      "airports": [
+        "PWM",
+        "BGR"
+      ],
+      "primary": null
+    },
+    {
+      "id": "yellowstone",
+      "name": "Yellowstone",
+      "airports": [
+        "JAC",
+        "BZN",
+        "IDA"
+      ],
+      "primary": "JAC",
+      "note": "Jackson Hole (JAC) is primary; Bozeman (BZN) and Idaho Falls (IDA) are secondary. Cheapest shown."
+    },
+    {
+      "id": "adirondacks",
+      "name": "Adirondacks",
+      "airports": [
+        "ALB",
+        "SYR"
+      ],
+      "primary": "ALB",
+      "note": "Albany (ALB) is primary; Syracuse (SYR) is the backup. Cheapest shown."
+    }
+  ],
+  "airport_names": {
+    "TPA": "Tampa",
+    "MCO": "Orlando",
+    "FLL": "Fort Lauderdale",
+    "PBI": "West Palm Beach",
+    "VRB": "Vero Beach",
+    "DEN": "Denver",
+    "LAX": "Los Angeles",
+    "SAN": "San Diego",
+    "SFO": "San Francisco",
+    "OAK": "Oakland",
+    "BUR": "Burbank",
+    "SEA": "Seattle",
+    "PDX": "Portland OR",
+    "PWM": "Portland ME",
+    "BGR": "Bangor",
+    "JAC": "Jackson Hole",
+    "BZN": "Bozeman",
+    "IDA": "Idaho Falls",
+    "ALB": "Albany",
+    "SYR": "Syracuse"
+  },
+  "search_code_aliases": {
+    "PBI": "DJT"
+  },
+  "_search_code_aliases_note": "Palm Beach Intl was renamed President Donald J. Trump Intl and Google Flights now only returns results under code DJT. The site still labels it PBI. Remove the alias if Google goes back to PBI.",
+  "passengers": {
+    "adults": 2,
+    "children": 4
+  },
+  "dates": {
+    "explicit": [],
+    "days_ahead": [
+      21,
+      45,
+      75
+    ],
+    "snap_to_weekday": "Tue"
+  },
+  "tracked_carriers": {
+    "F9": "Frontier",
+    "WN": "Southwest",
+    "NK": "Spirit",
+    "DL": "Delta",
+    "AA": "American",
+    "UA": "United",
+    "AS": "Alaska",
+    "B6": "JetBlue",
+    "MX": "Breeze"
+  },
+  "frontier_competitive_pct": 10,
+  "verify_party_price": true,
+  "max_stops": null,
+  "request_delay_seconds": [
+    1.5,
+    3.5
+  ],
+  "retries": 3,
+  "serpapi": {
+    "enabled_if_env": "SERPAPI_KEY",
+    "max_calls_per_run": 3
+  }
+}

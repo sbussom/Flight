@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One-way fares from Florida · family of 6</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>One-way fares from Florida</h1>
+  <p class="sub" id="sub">2 adults + 4 children · one-way · economy</p>
+  <p class="updated" id="updated">Loading cached fares…</p>
+</header>
+
+<section class="controls" aria-label="Filters">
+  <label>Origin
+    <select id="f-origin"><option value="">All origins</option></select>
+  </label>
+  <label>Destination
+    <select id="f-group"><option value="">All destinations</option></select>
+  </label>
+  <label class="toggle"><input type="checkbox" id="f-frontier"> Frontier fares only</label>
+  <label class="toggle"><input type="checkbox" id="f-hide-empty"> Hide routes with no data</label>
+</section>
+
+<div id="alerts"></div>
+<main id="list" aria-live="polite"></main>
+
+<footer>
+  <p id="foot"></p>
+  <p>Prices come from a once-a-day cached search of Google Flights. They are not live, can change any time, and exclude bag fees.
+     Always confirm on the airline's site before booking. Nothing on this page is estimated except where marked “est.”</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
